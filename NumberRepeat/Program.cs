@@ -7,7 +7,13 @@ namespace NumberRepeat
         private static char NumberRequired = '1';
         static void Main(string[] args)
         {
-            NumberRepect(-1, 30);
+            Console.WriteLine("Introduzca el  primer número");
+
+            var number1 = Console.ReadLine();
+            Console.WriteLine("Introduzca el  segundo número");
+
+            var number2 = Console.ReadLine();
+            NumberRepect(int.Parse(number1), int.Parse(number2));
         }
 
 
